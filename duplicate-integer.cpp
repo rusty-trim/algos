@@ -1,15 +1,15 @@
-#include <map>
 #include <vector>
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <unordered_map>
 
 using namespace std;
 
 bool hasDuplicate(vector<int> &nums)
 {
     int i = 0;
-    map<int, int> hash;
+    unordered_map<int, int> hash;
     
     for(i = 0; i < nums.size(); i++)
     {
